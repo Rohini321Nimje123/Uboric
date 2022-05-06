@@ -22,5 +22,24 @@
 
     </div>
     
+    <script>
+    var userarr = JSON.parse(localStorage.getItem("user")) || [];
+    function signup(){
+        let name = document.getElementById("name").value;
+        
+        let pass = document.getElementById("pwd").value;
+        var userCredential = {
+            Name:name,
+           
+            Password:pwd,
+        }
+        userarr.push(userCredential);
+        localStorage.setItem("user",JSON.stringify(userarr));
+        window.location.href = "login.html";
+        //please connect login.html
+        // same local storage data used in login page
+    }
+</script>
+    
 </body>
 </html>

@@ -1,0 +1,122 @@
+#container{
+    width: 100%;
+    /* border:1px solid red; */
+    height: 100%;
+}
+.greenpart{
+    width: 100%;  
+    /* border:1px solid darkorange; */
+    /* background-image: url('https://www.uboric.com/wp-content/uploads/2020/12/Testimonial-5.jpg');
+    background-size:100%;
+    background-repeat: no-repeat; */
+    background-color:rgb(124, 122, 13);; 
+
+} 
+
+    p
+    {font-size: 16px;
+    text-align:center;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    /* font-style: 19px Lato,sans-serif; */
+    font-weight: 10;
+    line-height:30px;}
+
+    
+    .row1
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-around ; 
+        
+    }
+    .col-md-20{
+        width: 12%;
+         /* border: 1px solid red; */
+         background-color: rgb(124, 122, 13);
+         color: white;
+        
+    } 
+
+    h6{
+        text-align: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* font-style: italic; */
+        font-weight: 10;
+        
+    }
+
+
+h2{
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  color: whitesmoke;
+  font-weight: 500;
+}
+#head{
+  margin-bottom:90px;
+  
+}
+button{
+    padding: 5px 8px 5px 8px;
+    background-color: rgb(184, 124, 34);
+    border: none;
+}
+button:hover
+{
+  background-color:rgb(163, 163, 6) ;
+  color: white;
+  cursor: pointer;
+  border-color: white;
+}
+#btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* ----------------------for black part css code------------------------------------------------------------------ */
+    
+#blackpart{
+    background-color: black;
+    height: 400px;
+    width: 100%;
+    /* margin-top: 60px; */
+  }
+  #play{
+    
+    padding-top: 100px;
+    text-align: center;
+  }
+  #seven{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+  }
+  #seven>h5{
+    color: white;
+  }
+  #bs{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+  }
+  #bs>p{
+    color: white;
+
+    
+  }  
+  .social-menu ul{
+      display: flex;
+      justify-content:center;
+  }
+  .social-menu  ul li {
+    margin-left: 10px;
+     
+    
+  }
+ 
+
+

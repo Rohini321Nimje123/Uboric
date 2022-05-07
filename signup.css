@@ -7,7 +7,7 @@ body{
 
 }
 
-.Sign-in {
+.Sign-up {
     width:350px;
     top:50%;
     left:50%;
@@ -16,33 +16,37 @@ body{
     
 }
 
-.Sign-in h1 {
+.Sign-up h1 {
     font-size: 40px;
     text-align: auto;
     margin:40px 0;
 }
 
-.Sign-in p{
+.Sign-up p{
     font-size: 20px;
     margin: 15px 0;
 }
 
-.Sign-in input{
+.Sign-up input{
     font-size: 25px;
     width: 100%;
     padding: 15px 10;
     outline:none;
     box-shadow: 3px 3px 3px
 }
-.Sign-in button{
+.Sign-up button{
     font-size: 18px;
     font-weight:bold;
     margin: 20px 0;
     padding: 10px 15px;
     width:50%;
     border-radius:5px;
-    background: orange;
+    
 }
 
+#submit{
+    background: orangered;
+    border-radius: 10px;
+}
 
 

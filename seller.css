@@ -1,44 +1,60 @@
 *{
     margin-left: 5px;;
 }
-body{
+/* body{
     background-position: center;
     background-size: cover;
     font-family: sans-serif;
     margin-top: 70px;
-}
+} */
 
-form{
+/* form{
     margin:auto;
     width:70%;
+} */
+#heading{
+text-align: center;
+
 }
-body h1{
-    text-align:center;
+#heading>h2{
+    /* text-align:center; */
     color:darkblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    
 }
-body p{
-    text-align:center;
+#heading>p{
+    /* text-align:center; */
     font-size:10px;
     color:darkblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .regven{
-    margin-left: 80px;
+    width: 50%;
+    /* border: 1px solid green; */
+
 }
-p1{
-    margin-left:100px;
-    font-size: 20px;
+ p1{
+    /* margin-left:100px; */
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.regven>h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
 }
 
-.input1{
+ .input1{
     display:flex;
-    justify-content: space-evenly;
+    justify-content:space-between ;
 }
 .input1 > div > input{
     top:-37px;
-    line-height:50px;
+    line-height:40px;
     border-radius:5px;
-    padding:0 150px;
+    padding:0 100px; 
     font-size: 18px;
+    border-color: grey;
 }
 .input1 > div > label{
     margin-bottom:10px;
@@ -51,10 +67,12 @@ p1{
 
 .input3 > div > input{
     top:-37px;
-    line-height:50px;
+    line-height:40px;
     border-radius:5px;
-    padding:0 400px;
+    padding:0 410px;
     font-size: 18px;
+    border-color:gray;
+    
     
 }
 .input3 > div > label{
@@ -65,14 +83,15 @@ p1{
 
 .input5{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .input5 > div > input{
     top:-37px;
-    line-height:50px;
+    line-height:40px;
     border-radius:5px;
-    padding:0 150px;
+    padding:0 100px;
     font-size: 18px;
+    border-color:gray;
 }
 .input5 > div > label{
     margin-bottom:10px;
@@ -81,10 +100,11 @@ p1{
 
 .input8 > div > input{
     top:-37px;
-    line-height:50px;
+    line-height:40px;
     border-radius:5px;
-    padding:0 400px;
+    padding:0 410px;
     font-size: 18px;
+    border-color:gray;
     
 }
 .input8 > div > label{
@@ -95,7 +115,7 @@ p1{
 
 p2{
     margin-left:100px;
-    font-size: 20px;
+    font-size: 15px;
     color:gray;
 }
 
@@ -103,26 +123,28 @@ p2{
     top:-37px;
     line-height:150px;
     border-radius:5px;
-    padding:0 400px;
+    padding:0 410px;
     font-size: 18px;
+    border-color:gray;
     
 }
 .input10 > div > label{
     margin-bottom:10px;
-    font-size: 18px;
+    font-size: 18px; 
     
 } 
 
 .input12{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .input12 > div > input{
     top:-37px;
-    line-height:50px;
+    line-height:40px;
     border-radius:5px;
-    padding:0 150px;
+    padding:0 100px;
     font-size: 18px;
+    border-color:gray;
 }
 .input12 > div > label{
     margin-bottom:10px;
@@ -131,9 +153,9 @@ p2{
 
 .input15 > div > input{
     top:-37px;
-    line-height:50px;
+    line-height:40px;
     border-radius:5px;
-    padding:0 400px;
+    padding:0 410px;
     font-size: 18px;
     
 }
@@ -148,16 +170,24 @@ p2{
     font-weight:bold;
     margin:50px 0;
     padding: 10px, 10px;
-    width:80%;
+    /* width:80%; */
     border-radius: 5px;
-    text-align: center;
+    text-align: center
 }
 button{
-    background-color:orange;
+    background-color:orange; 
     padding: 12px 30px;
     margin-left: 60px;
 
 
 }
+.main{
+    width: 85%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+   
+
+
 
 

@@ -69,12 +69,12 @@
 
            <div class="putdetail">
                <lable for="">Username or Email address<i style="color :red" >*</i></lable><br><br>
-               <input  class="eml" type="email" value=""/> <br> <br> <br>
+               <input id = "email" type="text" placeholder = "email"> <br> <br> <br>
 
                
 
                <lable for="">Password <i style="color :red">*</i></lable><br><br>
-               <input id="psw" type="password" value=""/>
+               <input id = "password" type="text" placeholder = "password" >
           <br> <br>
 
               
@@ -272,5 +272,32 @@
         
 </body>
 </html>
+<script>
+    var form  = document.querySelector("#form")
+var userdata = JSON.parse(localStorage.getItem("userdata"))
+form.addEventListener("submit",function(event){
+    event.preventDefault();
+    var data = {
+        email : form.email.value,
+        password : form.password.value,
+    }
+    if(userdata === null)
+    {
+        alert("create an account first");
+    }
+    else if(userdata.email == data.email &&userdata.password == data.password)
+    {
+        alert("signin successful");
+        localStorage.setItem("signup",JSON.stringify(userdata))
+        window.location.href = "index.html"
+    }
+    else
+    {
+        alert("user does not exist")
+    }
+})
+
+</script>
+
 
 

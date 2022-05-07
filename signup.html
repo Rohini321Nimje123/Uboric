@@ -8,38 +8,67 @@
     <link rel="stylesheet" type="text/css" href="./signup.css">
 </head>
 <body>
-    <div class="Sign-in">
-        <h1>Sign in</h1>
+    <div class="Sign-up">
+        
+        <h1>Sign up</h1>
+
         <p><B>CREATE AN ACCOUNT</B></p>
+      <form id="formm">
         <p>Username or email<i style="color:orange">*</i></p>
-        <input type="text" name="user" placeholder="Username or email">
+        <input id="name1" type="text" name="user" placeholder="Username or email">
         <p>Password<i style="color:orange">*</i></p>
-        <input type="password" name="password" placeholder="Password">
+        <input id="pas1" type="password" name="password"  placeholder="Password">
         <p>LOST YOUR PASSWORD?</p>
-        <button type="submit">Login</button>
+       
         
-
-
-    </div>
+        <input id="submit" type="submit"  value="Signup"/> 
     
-    <script>
-    var userarr = JSON.parse(localStorage.getItem("user")) || [];
-    function signup(){
-        let name = document.getElementById("name").value;
         
-        let pass = document.getElementById("pwd").value;
-        var userCredential = {
-            Name:name,
-           
-            Password:pwd,
-        }
-        userarr.push(userCredential);
-        localStorage.setItem("user",JSON.stringify(userarr));
-        window.location.href = "login.html";
-        //please connect login.html
-        // same local storage data used in login page
-    }
-</script>
+    </form>
+    </div>
     
 </body>
 </html>
+<script>
+
+    document.querySelector("#formm").addEventListener("submit",addData);
+
+    var userDatarr=JSON.parse(localStorage.getItem("userDatabase")) || [];
+
+    function addData(){
+        var yourname=document.querySelector("#name1").value;
+        var yourpas=document.querySelector("#pas1").value;
+         
+
+        var userCard={
+            tmhraname:yourname,
+            tmhrapassword:yourpas
+        };
+
+        userDatarr.push(userCard);
+
+        localStorage.setItem("userDatabase",JSON.stringify(userDatarr));
+
+        
+
+          if(formm.pas1.value.length >=6 && formm.name1.value.length>=6)
+             {
+            
+                alert("registor")
+                // window.location="login.html"
+            
+             }
+             
+            
+            else if(formm.pas1.value == "" && formm.name1.value==""){
+                alert("Do not keep it Blank");
+            }
+            else
+            {
+                alert ("length is not enough");
+            }
+                
+             }
+    
+    
+</script>

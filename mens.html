@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men's Footwear</title>
+    <link rel="stylesheet" href="./../css/pages/foot-wear/men/men.css" ; />
+    <link rel="stylesheet" href="../kota/search/slider_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="./../css/index.css" />
+  <link rel="stylesheet" type="text/css" href="./footer.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="header.css">
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    .links{
+        text-align: center;
+    }
+     h2{
+        text-align: left;
+    }
+    .options{
+        height: 1225px;
+        width: 20%;
+       /* border: 1px solid red;*/
+    }
+    .container{
+        height: 1220px;
+        width: 78%;
+        /*border: 1px solid red;*/
+        margin-left: auto;
+        margin-top: -1200px;
+     }
+    #display{    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 350px);
+        gap: 30px;
+        margin-top: 20px;
+    }
+    #display > div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 15px;
+    }
+    img{
+        height: 75%;
+        width: 80%;
+        margin-top: 15px;
+        padding-left: 35px;
+    }
+    #display > div > h2{
+        text-align: center;
+        color: rgb(97, 96, 96);
+    }
+    #brands{
+      color: rgb(69, 68, 68);
+    }
+    #catagories{
+      color: rgb(69, 68, 68);
+    }
+    #colors{
+      color: rgb(69, 68, 68);
+    }
+     /* Medium screens */
+     @media all and (min-width:451px) and (max-width:750px) {
+      #display{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 300px);
+        margin-top: -170px;
+      }
+      img{
+        height: 100px;
+      }
+    }
+
+
+    /* Small Screens */
+    @media all and (min-width:100px) and (max-width:450px) {
+      #display{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 300px);
+        margin-top: -170px;
+      }
+      img{
+        height: 100px;
+      }
+    }
+    
+</style>
+<body>
+  <header class = "header">
+    <div class = "header-content">
+        <div class ="searchbar">
+            <input type = "text" placeholder = "Search here..."/>
+        </div>
+        <div class = "uboric-icon"><a href = "https://www.uboric.com/"><img src ="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt = "mainlogo"/></a></div>
+        <div class = "signuppage"><a href = "signup.html"><img src = "https://cdn-icons-png.flaticon.com/128/709/709722.png" alt = "icon"/></a></div>
+        <div class = add-to-cart><a><img src = "https://cdn-icons.flaticon.com/png/128/3405/premium/3405668.png?token=exp=1651732476~hmac=55d703dcbb8c81b511919e5b79cde96e" alt = "icon"/></a></div>
+    </div>
+    <div class = "mainbar">
+     <h3><a id = "home"href="index.html">Home</a></h3>
+     <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Categories</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="mens.html">Men</a>
+          <a href="women.html">Women</a>
+          <a href="Kitchen.html">Kitchen</a>
+          <a href="A-men.html">Men shoes</a>
+          <a href="A-women.html">women Shoes</a>
+        </div>
+      </div>
+     <h3  id = "log"><a href = "login.html">Customer/Guest login</a></h3>
+     <h3 id = "order">Merchant/Bulk order</h3>
+     <h3 id = "seller"><a href = "seller.html">Become A Seller</a></h3>
+    </div>
+</header>
+    <main>
+        <h1>MENS</h1>
+        <section class="links">
+            <a href="./../../index.html">Home</a> > <a href="#">Products</a> >
+            <a href="#">FOOT WEAR</a> >
+            <a href="#">MENS</a>
+          </section>
+          <section class="display-flex">
+            <aside class="options">
+              <div class="search-box">
+                <input type="text" placeholder="Search for products" id="search" />
+              </div>
+               <hr />
+               <div class="brands-cont">
+                <h2>Brands</h2>
+                   <div id="brands">
+                    <div>
+                        <p><input type="checkbox" />
+                            Nike</p>
+                        <p><input type="checkbox" />
+                            Clarks</p>
+                        <p><input type="checkbox" />
+                            Puma</p>
+                        <p><input type="checkbox" />
+                            Adidas</p>
+                        <p><input type="checkbox" />
+                        Woodland</p>
+                        <p><input type="checkbox" />
+                            Lee Cooper</p>
+                        <p><input type="checkbox" />
+                            Reebok</p>
+                    </div>
+                </div>
+              </div>
+    
+              <hr />
+              <div class="products">
+                <h2>Products Catagories</h2>
+                <div id="catagories">
+                    <div>
+                        <p><input type="checkbox" />
+                            Casual/Party Shoes</p>
+                        <p><input type="checkbox" />
+                            Casual Sandals</p>
+                        <p><input type="checkbox" />
+                            Sneakers</p>
+                        <p><input type="checkbox" />
+                            Loafers</p>
+                        <p><input type="checkbox" />
+                            Flip Flops</p>
+                        <p><input type="checkbox" />
+                            Mojdi</p>
+                        <p><input type="checkbox" />
+                            Slippers</p>
+                        <p><input type="checkbox" />
+                            Sports Shoes</p>
+                        <p><input type="checkbox" />
+                           Sports Sandals</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <hr />
+                <div class="products">
+                    <h2>Products Colors</h2>
+                    <div id="colors">
+                        <div>
+                            <p><input type="checkbox" />
+                                Black</p>
+                            <p><input type="checkbox" />
+                                Grey</p>
+                            <p><input type="checkbox" />
+                                Brown</p>
+                            <p><input type="checkbox" />
+                                Navy Blue</p>
+                            <p><input type="checkbox" />
+                                Black Grey</p>
+                            <p><input type="checkbox" />
+                                Beige</p>
+                            <p><input type="checkbox" />
+                                White</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                        <h2>Show More</h2>
+                    </div>
+                    <hr />
+                    <div class="product-size">
+                        <h3>Product Size</h3>
+                        <input type="text" id="size" />
+                      </div>
+            
+                      <hr />
+            
+                      <div class="product-clouser">
+                        <h3>Product Clouser</h3>
+                        <input type="text" id="clouser" />
+                      </div>
+            
+                      <hr/>
+                    </aside>
+                     <!-- Products Container -->
+                    <div class="container">
+                        <div id="display">
+                            <div><img
+                                src="https://www.uboric.com/wp-content/uploads/2019/12/fe2354c1ff2223538915e6c80416533b_result-400x400.jpg"
+                                alt="name
+                                "
+                                class="item-img"
+                              />
+                            <h2>Casual Sandals (200)</h2>
+                            </div>
+                            <div><img
+                                src="https://www.uboric.com/wp-content/uploads/2019/12/fe4618c043ad5d860331149ed80888ef_result-400x400.jpg"
+                                alt="name
+                                "
+                                class="item-img"
+                              />
+                            <h2>Slippers (180)</h2></div>
+                            <div><img
+                                src="https://www.uboric.com/wp-content/uploads/2019/12/5ca7752dd0d34782f3b46e5c94cc0f3b_result-400x400.jpg"
+                                alt="name
+                                "
+                                class="item-img"
+                              />
+                            <h2>Sneakers (300)</h2></div>
+                            <div><img
+                                src="https://www.uboric.com/wp-content/uploads/2019/12/4b51e0cf02d5f2529ccc61d3201fbe58_result-400x400.jpg"
+                                alt="name
+                                "
+                                class="item-img"
+                              />
+                            <h2>Loafers (250)</h2></div>
+                            <div><img
+                                src="https://www.uboric.com/wp-content/uploads/2019/12/d4c25e9efd546803ca71d1a82fadc65b_result-400x400.jpg"
+                                alt="name
+                                "
+                                class="item-img"
+                              />
+                            <h2>Flip Flops (350)</h2></div>
+                            <div><img
+                                src="https://www.uboric.com/wp-content/uploads/2019/12/b4bf30bb1519e85a2e9e55ca332bb4ab_result-400x400.jpg"
+                                alt="name
+                                "
+                                class="item-img"
+                              />
+                            <h2>Mojdi (200)</h2></div>
+                            <div><img
+                                src="https://www.uboric.com/wp-content/uploads/2019/12/bef2b18d267aea052d02f7d537f8ad26_result-400x400.jpg"
+                                alt="name
+                                "
+                                class="item-img"
+                              />
+                            <h2>Sports Shoes (200)</h2></div>
+                            <div><img
+                                src="https://www.uboric.com/wp-content/uploads/2019/12/1de99999291951b1f3799b8a82464aa3_result-400x400.jpg"
+                                alt="name
+                                "
+                                class="item-img"
+                              />
+                            <h2>Casual/Party Shoes (140)</h2></div>
+                            <div><img
+                                src="https://www.uboric.com/wp-content/uploads/2019/12/7e7fee993140e1f6a3fc82179141f430_result-400x400.jpg"
+                                alt="name
+                                "
+                                class="item-img"
+                              />
+                            <h2>Sports Sandals (178)</h2></div>
+                        </div>
+
+                    </div>
+                </aside>
+          </section>
+    </main>
+    <footer class="footer">  
+      <div id="container">
+  
+       <div class="greenpart">
+              <!-- <p style="background-image: url('https://www.uboric.com/wp-content/uploads/2020/12/Testimonial-5.jpg');" > -->
+                  <div id="head"><h2>What Our Customer Says</h2></div>
+                       
+               <div class="row1 slider">  
+  
+                  <div class="col-md-20">
+                      <p>Good range of shooes and great customer service👌🏻
+                          <p> sagar rupapra</p>
+                          <h6>☆☆☆☆- cutomer</h6>
+                      </p>
+  
+                  </div>
+                  <div class="col-md-20">
+                      <p> Best Range 👍🏻  </p>
+                          
+                          <p>vidya</p>
+                      <h6> ☆☆☆☆☆-cutomer</h6>
+  
+                      
+                </div>
+                  <div class="col-md-20">
+                      <p>Best app for all the footwear needs.
+                          All products are genuine and the 
+                          Services are 100% guaranteed.
+                      
+                      <p>harshil patel</p>
+                      <h6> ☆☆☆☆☆- cutomer</h6>
+                  </p>
+                  </div>
+                  <div class="col-md-20">
+                      <p>Amazing veriaty of shoes in all brand.... Best showroom in Rajkot.
+                      <p>Malin kancha</p>
+                      <h6> ☆☆☆☆☆- cutomer</h6>
+                  </p>
+                
+                  </div>
+                  <div class="col-md-20">
+                      <p> Best Quality products.
+                          <p>parth Gajjar</p>
+                          <h6>☆☆☆☆☆- cutomer</h6>
+                      </p>
+                      
+                  </div>
+                  <div class="col-md-20">
+                      <p>
+                          Premium Quality Footwear Products.👌🏻
+                          Highly Recommend Uboric for your all kind of Footwear Needs 👍🏻 
+                      <p> Dhaval Patel </p>
+                      <h6>☆☆☆☆☆- cutomer</h6>
+                      </p>
+                  </div>
+                  <div class="col-md-20">
+                      <p>Best Quality👍🏻 👍🏻 
+                          <p>Ashish vaghasiya </p>
+                          <h6>☆☆☆☆☆- cutomer</h6>
+                      </p>
+                  </div>
+                  <div class="col-md-20">
+                      <p>
+                          Best collection👍🏻 
+                          <p>Yagnik Sagpariya</p>
+                          <h6>☆☆☆☆☆- cutomer</h6>
+                      </p>
+                  </div>
+  
+              </div>
+               <div id="btn">
+                  <button>Add Your Review</button>
+              </div>
+       </div>
+      <div id="blackpart">
+          <div id="play">
+            <img src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png" height="50px" width="150px" >
+           </div>
+  
+           <div id="seven">
+  
+             <h5><a href=""></a>About Us</h5>
+             <h5><a href=""></a>Contact</h5>
+             <h5><a href=""></a>Shipping & Returns</h5>
+             <h5><a href=""></a>My Account</h5>
+             <h5><a href=""></a>Privacy Policy</h5>
+             <h5><a href=""></a>Become A Seller</h5>
+             <h5><a href=""></a>Terms & Conditions</h5> 
+           </div>
+  
+           <div id="bs">
+             <p >© 2019 – 2021 UBORIC. ALL RIGHTS RESERVED.</p>
+           </div>
+           <div class="social-menu">
+               <ul>
+                   <li>
+                       <a href="#" target="blank" title="rss"><i class="fa fa-facebook"></i></a>
+                   </li>
+                   <li>
+                      <a href="#" target="blank" title="rss"><i class="fa fa-instagram"></i></a>
+                  </li>
+               </ul>
+           </div>
+      </div>
+  
+   </div>
+      
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- for slid part  responsive display form slick slider -->
+
+<script type="text/javascript">
+    $('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+				
+</script> 
+</body>

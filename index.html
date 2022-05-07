@@ -6,29 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./footer.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="header.css">
 </head>
 <body>
     <div id = "topbar">FOR ONLINE PAYMENT EXTRA RS.100 DISCOUNT ON ORDERS ABOVE RS.500 </div>
     <header class = "header">
         <div class = "header-content">
             <div class ="searchbar">
-                <input type = "text" placeholder = "Search here"/>
-                <i class="fa fa-search"></i>
+                <input type = "text" placeholder = "Search here..."/>
             </div>
             <div class = "uboric-icon"><a href = "https://www.uboric.com/"><img src ="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt = "mainlogo"/></a></div>
-            <div class = "signuppage"><a><img src = "https://cdn-icons-png.flaticon.com/128/709/709722.png" alt = "icon"/></a></div>
+            <div class = "signuppage"><a href = "signup.html"><img src = "https://cdn-icons-png.flaticon.com/128/709/709722.png" alt = "icon"/></a></div>
             <div class = add-to-cart><a><img src = "https://cdn-icons.flaticon.com/png/128/3405/premium/3405668.png?token=exp=1651732476~hmac=55d703dcbb8c81b511919e5b79cde96e" alt = "icon"/></a></div>
         </div>
         <div class = "mainbar">
-         <h3>Home</h3>
-         <h3>Categories</h3>
-         <h3>Customer/Guest login</h3>
-         <h3>Merchant/Bulk order</h3>
-         <h3>Become A Seller</h3>
+         <h3><a id = "home"href="index.html">Home</a></h3>
+         <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Categories</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="mens.html">Men</a>
+              <a href="women.html">Women</a>
+              <a href="Kitchen.html">Kitchen</a>
+              <a href="A-men.html">Men shoes</a>
+              <a href="A-women.html">women Shoes</a>
+            </div>
+          </div>
+         <h3  id = "log"><a href = "login.html">Customer/Guest login</a></h3>
+         <h3 id = "order">Merchant/Bulk order</h3>
+         <h3 id = "seller"><a href = "seller.html">Become A Seller</a></h3>
         </div>
     </header>
-    <div class = "shopimage">
-     <img src = "" alt = "img"/>
+   <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_bcd_250422_400.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_babycare_250422_400.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_health_suppliment_250422_400.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
     </div>
     <div class = "midhead">
         <img src = "https://www.uboric.com/wp-content/uploads/elementor/thumbs/kitchen-ware-heading-pkx8tvxfmbbsdlrzrk3iwlbxruc7cn5sq339xkx9cg.png" alt = "logo" />
@@ -36,9 +84,9 @@
         <img src = "https://www.uboric.com/wp-content/uploads/elementor/thumbs/kitchen-ware-heading-pkx8tvxfmbbsdlrzrk3iwlbxruc7cn5sq339xkx9cg.png" alt = "logo" />
     </div>
     <div class = "items">
-        <div><a href=""><img src="https://www.uboric.com/wp-content/uploads/2020/12/kithchen-tools-1000x784.jpg" alt="item"/></a></div>
-        <div><a href=""><img src="https://www.uboric.com/wp-content/uploads/2020/12/Air-Tight-Containers-1000x784.jpg"alt="item"></a></div>
-        <div><a href=""><img src="https://www.uboric.com/wp-content/uploads/2020/12/Gas-Lighter-1024x1024.jpg"alt="item"></a></div>
+        <div><a href="Kitchen.html"><img src="https://www.uboric.com/wp-content/uploads/2020/12/kithchen-tools-1000x784.jpg" alt="item"/></a></div>
+        <div><a href="Kitchen.html"><img src="https://www.uboric.com/wp-content/uploads/2020/12/Air-Tight-Containers-1000x784.jpg"alt="item"></a></div>
+        <div><a href="Kitchen.html"><img src="https://www.uboric.com/wp-content/uploads/2020/12/Gas-Lighter-1024x1024.jpg"alt="item"></a></div>
     </div>
     <div class = "support">
        <img src = "https://www.uboric.com/wp-content/uploads/2020/08/Uboric-1.jpg" alt = "support"/>
@@ -83,14 +131,14 @@
 </div>
 </div>
 <div class = "prodd">
-    <a href=""><img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/men-fashion-pf2rgkwglk7z47uh031vpxcshl64adc389ivxapmss.jpg" alt="item"></a>
+    <a href="mens.html"><img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/men-fashion-pf2rgkwglk7z47uh031vpxcshl64adc389ivxapmss.jpg" alt="item"/></a>
 </div>
 <div class = "proddd">
-    <div><a href=""><img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-1-768x1153.jpg" alt="item"></a></div>
-    <div><a href=""><img src=https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-3-768x1153.jpg" alt="item"></a></div>
-   <div><a href=""><img src=https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-2-768x1153.jpg" alt="item"></a></div>
-   <div><a href=""><img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-768x1153.jpg" alt="item"></a></div>
-    <div><a href=""><img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-5-768x1153.jpg" alt="item"></a></div>
+    <div><a href="A-men.html"><img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-1-768x1153.jpg" alt="item"></a></div>
+    <div><a href="A-women.html"><img src=https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-3-768x1153.jpg" alt="item"></a></div>
+   <div><a href="A-men.html"><img src=https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-2-768x1153.jpg" alt="item"></a></div>
+   <div><a href="A-men.html"><img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-768x1153.jpg" alt="item"></a></div>
+    <div><a href="A-women.html"><img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-5-768x1153.jpg" alt="item"></a></div>
 </div>
 <div class = "para">
 <h2>
@@ -115,6 +163,198 @@
         <li><span><img src = "https://cdn-icons-png.flaticon.com/128/7381/7381444.png" alt = "img"/></span><span>Order History:</span></li>
     </ul>
  </div>
+ <footer class="footer">  
+    <div id="container">
+
+     <div class="greenpart">
+            <!-- <p style="background-image: url('https://www.uboric.com/wp-content/uploads/2020/12/Testimonial-5.jpg');" > -->
+                <div id="head"><h2>What Our Customer Says</h2></div>
+                     
+             <div class="row1 slider">  
+
+                <div class="col-md-20">
+                    <p>Good range of shooes and great customer service👌🏻
+                        <p> sagar rupapra</p>
+                        <h6>☆☆☆☆- cutomer</h6>
+                    </p>
+
+                </div>
+                <div class="col-md-20">
+                    <p> Best Range 👍🏻  </p>
+                        
+                        <p>vidya</p>
+                    <h6> ☆☆☆☆☆-cutomer</h6>
+
+                    
+              </div>
+                <div class="col-md-20">
+                    <p>Best app for all the footwear needs.
+                        All products are genuine and the 
+                        Services are 100% guaranteed.
+                    
+                    <p>harshil patel</p>
+                    <h6> ☆☆☆☆☆- cutomer</h6>
+                </p>
+                </div>
+                <div class="col-md-20">
+                    <p>Amazing veriaty of shoes in all brand.... Best showroom in Rajkot.
+                    <p>Malin kancha</p>
+                    <h6> ☆☆☆☆☆- cutomer</h6>
+                </p>
+              
+                </div>
+                <div class="col-md-20">
+                    <p> Best Quality products.
+                        <p>parth Gajjar</p>
+                        <h6>☆☆☆☆☆- cutomer</h6>
+                    </p>
+                    
+                </div>
+                <div class="col-md-20">
+                    <p>
+                        Premium Quality Footwear Products.👌🏻
+                        Highly Recommend Uboric for your all kind of Footwear Needs 👍🏻 
+                    <p> Dhaval Patel </p>
+                    <h6>☆☆☆☆☆- cutomer</h6>
+                    </p>
+                </div>
+                <div class="col-md-20">
+                    <p>Best Quality👍🏻 👍🏻 
+                        <p>Ashish vaghasiya </p>
+                        <h6>☆☆☆☆☆- cutomer</h6>
+                    </p>
+                </div>
+                <div class="col-md-20">
+                    <p>
+                        Best collection👍🏻 
+                        <p>Yagnik Sagpariya</p>
+                        <h6>☆☆☆☆☆- cutomer</h6>
+                    </p>
+                </div>
+
+            </div>
+             <div id="btn">
+                <button>Add Your Review</button>
+            </div>
+     </div>
+    <div id="blackpart">
+        <div id="play">
+          <img src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png" height="50px" width="150px" >
+         </div>
+
+         <div id="seven">
+
+           <h5><a href=""></a>About Us</h5>
+           <h5><a href=""></a>Contact</h5>
+           <h5><a href=""></a>Shipping & Returns</h5>
+           <h5><a href=""></a>My Account</h5>
+           <h5><a href=""></a>Privacy Policy</h5>
+           <h5><a href=""></a>Become A Seller</h5>
+           <h5><a href=""></a>Terms & Conditions</h5> 
+         </div>
+
+         <div id="bs">
+           <p >© 2019 – 2021 UBORIC. ALL RIGHTS RESERVED.</p>
+         </div>
+         <div class="social-menu">
+             <ul>
+                 <li>
+                     <a href="#" target="blank" title="rss"><i class="fa fa-facebook"></i></a>
+                 </li>
+                 <li>
+                    <a href="#" target="blank" title="rss"><i class="fa fa-instagram"></i></a>
+                </li>
+             </ul>
+         </div>
+    </div>
+
+ </div>
+    
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- for slid part  responsive display form slick slider -->
+
+<script type="text/javascript">
+    $('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}	
+</script> 
 </body>
 </html>
-<script></script>

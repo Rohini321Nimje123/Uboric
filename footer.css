@@ -1,3 +1,10 @@
+.footer
+{
+  margin-top : 20px;
+  width : 100%;
+  height : 100%;
+  padding-top : 40px;
+}
 #container{
     width: 100%;
     /* border:1px solid red; */
@@ -112,7 +119,7 @@ button:hover
       display: flex;
       justify-content:center;
   }
-  .social-menu  ul li {
+  .social-menu ul li {
     margin-left: 10px;
      
     

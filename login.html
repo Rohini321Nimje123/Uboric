@@ -34,7 +34,7 @@
                <form id="form">      
 
                 <div class="putdetail">
-                    <lable for="">Username or Email address<i style="color :red">*</i></lable><br><br>
+                    <lable for="">Username or Email address<i style="color :red" >*</i></lable><br><br>
                     <input  class="eml" type="email" value=""/> <br> <br> <br>
 
                     
@@ -49,19 +49,16 @@
                     <br> <br>
 
                <!-- <p class="resetpass"> <i class="far fa-question-circle"></i>lost your password</p> -->
-                   <div class="sub"><button class="btn" >LOGIN</button></div> 
+                   <!-- <div class="sub"><button class="btn" >LOGIN</button></div>  -->
+                   <input id="submit" type="submit" value="Login" />
                    <br>
-                   <div id="forgetpass"><a href="">forget password</a></div>
+                   <div id="forgetpass"><a href="">Lost Your Password</a></div>
 
 
-                </div>
-
-               
-                    
+                </div>  
             </form>
 
             </div>
-
 
             <!-- for girstration page -->
             <div class="forregistor"> 
@@ -71,7 +68,7 @@
                 </div>
                 <div class="rmail">
                     <label for="">Email addresss</label><br><br>
-                    <input class="eml" type="password" value=""/>
+                    <input id ="pwd" type="password" value=""/>
                 </div><br>
                 <div class="paraTwo">
                     <p>A link to set a new password will be sent to your email address.</p>
@@ -86,15 +83,38 @@
             </div>
         </div>
         
-        
-        
-        
-
-
-
     </div>
         
 </body>
 </html>
 
+<script>
+    document.querySelector("#form").addEventListener("submit",addDetails);
 
+    var datar=JSON.parse(localStorage.getItem("userData")) ||[];
+
+function addDetails(){
+
+     
+    var gmail=document.querySelector(".eml").value;
+
+    var kunji=document.querySelector("#psw").value;
+
+    var cards={
+        mygmail:gmail,
+        mykunji:kunji
+    };
+    datar.push(cards);
+
+  localStorage.setItem("userData",JSON.stringify(datar));
+    
+
+  if(form.psw.value.length >=6 && form.eml.value.length >=6){
+      console(login)
+  }
+  else{
+      alert("Invalid Email or Password")
+  }
+    }
+
+</script>

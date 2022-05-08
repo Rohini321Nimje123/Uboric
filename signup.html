@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
     <link rel="stylesheet" type="text/css" href="./signup.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
+
     <div class="Sign-up">
         
         <h1>Sign up</h1>
@@ -15,21 +17,37 @@
         <p><B>CREATE AN ACCOUNT</B></p>
       <form id="formm">
         <p>Username or email<i style="color:orange">*</i></p>
-        <input id="name1" type="text" name="user" placeholder="Username or email">
-        <p>Password<i style="color:orange">*</i></p>
-        <input id="pas1" type="password" name="password"  placeholder="Password">
+
         <p>LOST YOUR PASSWORD?</p>
        
         
         <input id="submit" type="submit"  value="Signup"/> 
+
     
         
     </form>
     </div>
-    
 </body>
 </html>
 <script>
+
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    
+</script>
+=======
 
     document.querySelector("#formm").addEventListener("submit",addData);
 
@@ -72,3 +90,4 @@
     
     
 </script>
+

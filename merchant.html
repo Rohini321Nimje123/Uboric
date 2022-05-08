@@ -6,9 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./merchant.css">
+    <link rel="stylesheet" href="merchant.css">
+ <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
+    <header class = "header">
+        <div class = "header-content">
+            <div class ="searchbar">
+                <input type = "text" placeholder = "Search here..."/>
+            </div>
+            <div class = "uboric-icon"><a href = "https://www.uboric.com/"><img src ="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt = "mainlogo"/></a></div>
+            <div class = "signuppage"><a href = "signup.html"><img src = "https://cdn-icons-png.flaticon.com/128/709/709722.png" alt = "icon"/></a></div>
+            <div class = add-to-cart><a><img src = "https://cdn-icons.flaticon.com/png/128/3405/premium/3405668.png?token=exp=1651732476~hmac=55d703dcbb8c81b511919e5b79cde96e" alt = "icon"/></a></div>
+        </div>
+        <div class = "mainbar">
+         <h3><a id = "home"href="index.html">Home</a></h3>
+         <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Categories</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="mens.html">Men</a>
+              <a href="women.html">Women</a>
+              <a href="Kitch.html">Kitchen</a>
+              <a href="A-men.html">Men shoes</a>
+              <a href="A-women.html">women Shoes</a>
+            </div>
+          </div>
+         <h3  id = "log"><a href = "login.html">Customer/Guest login</a></h3>
+         <h3 id = "order"><a href="merchant.html">Merchant/Bulk order</a></h3>
+         <h3 id = "seller"><a href = "seller.html">Become A Seller</a></h3>
+        </div>
+    </header>
     <div id="container">
 
         <div id="heading"><h1>B2B LOGIN/REGISTRATION FORM</h1>
@@ -106,22 +141,28 @@
 
                          <div class="submit"><button class="btn">Register</button>
 
-                         </div> 
-
-
-
-
-
-
-
-
-                         
-                      
+                         </div>         
               </form>
   
               </div>
-
-
-
 </body>
 </html>
+<script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>

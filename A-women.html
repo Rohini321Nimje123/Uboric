@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men's Footwear</title>
+    <link rel="stylesheet" href="./../css/pages/foot-wear/men/men.css" ; />
+    <link rel="stylesheet" href="../kota/search/slider_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="./../css/index.css" />
+  <link rel="stylesheet" type="text/css" href="./footer.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="header.css">
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    .links{
+        text-align: center;
+    }
+     h2{
+        text-align: left;
+    }
+    .options{
+        height: 1225px;
+        width: 20%;
+       /* border: 1px solid red;*/
+    }
+    .container{
+        height: 1220px;
+        width: 78%;
+        /*border: 1px solid red;*/
+        margin-left: auto;
+        margin-top: -1200px;
+     }
+    #display{    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 300px);
+        gap: 30px;
+        margin-top: 20px;
+        
+    }
+    #display > div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 15px;
+    }
+    img{
+        height: 75%;
+        width: 80%;
+        margin-top: 15px;
+        padding-left: 28px;
+    }
+    #display > div > h2{
+        text-align: center;
+        color: rgb(97, 96, 96);
+    }
+    #size{
+      color: rgb(69, 68, 68);
+    }
+    #catagories{
+      color: rgb(69, 68, 68);
+    }
+    #colors{
+      color: rgb(69, 68, 68);
+    }
+   #display > div > p{
+       text-align: center;
+       color:rgb(52, 51, 51);
+       margin-top: -1px;
+       font-size: larger;
+   }
+    
+     /* Medium screens */
+     @media all and (min-width:451px) and (max-width:750px) {
+      #display{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 300px);
+        margin-top: -170px;
+      }
+      img{
+        height: 100px;
+      }
+    }
+
+
+    /* Small Screens */
+    @media all and (min-width:100px) and (max-width:450px) {
+      #display{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 300px);
+        margin-top: -170px;
+      }
+      img{
+        height: 100px;
+      }
+    }
+    
+</style>
+<body>
+  <header class = "header">
+    <div class = "header-content">
+        <div class ="searchbar">
+            <input type = "text" placeholder = "Search here..."/>
+        </div>
+        <div class = "uboric-icon"><a href = "https://www.uboric.com/"><img src ="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt = "mainlogo"/></a></div>
+        <div class = "signuppage"><a href = "signup.html"><img src = "https://cdn-icons-png.flaticon.com/128/709/709722.png" alt = "icon"/></a></div>
+        <div class = add-to-cart><a><img src = "https://cdn-icons.flaticon.com/png/128/3405/premium/3405668.png?token=exp=1651732476~hmac=55d703dcbb8c81b511919e5b79cde96e" alt = "icon"/></a></div>
+    </div>
+    <div class = "mainbar">
+     <h3><a id = "home"href="index.html">Home</a></h3>
+     <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Categories</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="mens.html">Men</a>
+          <a href="women.html">Women</a>
+          <a href="Kitch.html">Kitchen</a>
+          <a href="A-men.html">Men shoes</a>
+          <a href="A-women.html">women Shoes</a>
+        </div>
+      </div>
+     <h3  id = "log"><a href = "login.html">Customer/Guest login</a></h3>
+     <h3 id = "order"><a href="merchant.html">Merchant/Bulk order</a></h3>
+     <h3 id = "seller"><a href = "seller.html">Become A Seller</a></h3>
+    </div>
+</header>
+    <main>
+        <h1>WOMENS</h1>
+        <section class="links">
+            <a href="./../../index.html">Home</a> > <a href="#">Products</a> >
+            <a href="#">FOOT WEAR</a> >
+            <a href="#">WOMENS</a>
+          </section>
+          <section class="display-flex">
+            <aside class="options">
+              <div class="search-box">
+                <input type="text" placeholder="Search for products" id="search" />
+              </div>
+               <hr />
+              <div class="products">
+                <h2>Products Catagories</h2>
+                <div id="catagories">
+                    <div>
+                      <p><input type="checkbox" />
+                        Pumps</p>
+                    <p><input type="checkbox" />
+                        Stilettos</p>
+                    <p><input type="checkbox" />
+                        Ankle Booties</p>
+                    <p><input type="checkbox" />
+                        Wedges</p>
+                    <p><input type="checkbox" />
+                        Ballerina Flats</p>
+                    <p><input type="checkbox" />
+                        Mules</p>
+                    <p><input type="checkbox" />
+                        Loafer</p>
+                    <p><input type="checkbox" />
+                         Fantasy</p>
+                    <p><input type="checkbox" />
+                         Flip Flop</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <hr />
+                <div class="brands-cont">
+                    <h2>By Size</h2>
+                       <div id="size">
+                        <div>
+                            <p><input type="checkbox" />
+                               4 (16) </p>
+                            <p><input type="checkbox" />
+                                5 (29)</p>
+                            <p><input type="checkbox" />
+                                6 (48)</p>
+                            <p><input type="checkbox" />
+                                7 (39)</p>
+                            <p><input type="checkbox" />
+                            8 (50)</p>
+                            <p><input type="checkbox" />
+                                9(49)</p>
+                            <p><input type="checkbox" />
+                                10 (34)</p>
+                        </div>
+                    </div>
+                  </div>
+                  <hr/>
+                <div class="products">
+                    <h2>Products Colors</h2>
+                    <div id="colors">
+                        <div>
+                            <p><input type="checkbox" />
+                                Black</p>
+                            <p><input type="checkbox" />
+                                Maroon</p>
+                            <p><input type="checkbox" />
+                                Brown</p>
+                            <p><input type="checkbox" />
+                                Navy Blue</p>
+                            <p><input type="checkbox" />
+                                Red</p>
+                            <p><input type="checkbox" />
+                                Beige</p>
+                            <p><input type="checkbox" />
+                               White </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                        <h2>Show More</h2>
+                    </div>
+                    <hr />
+                    <div class="product-size">
+                        <h3>Product Size</h3>
+                        <input type="text" id="size" />
+                      </div>
+            
+                      <hr />
+            
+                      <div class="product-clouser">
+                        <h3>Product Clouser</h3>
+                        <input type="text" id="clouser" />
+                      </div>
+            
+                      <hr/>
+                    </aside>
+                     <!-- Products Container -->
+                    <div class="container">
+                        <div id="display">
+                            <div><a href="womencart.html"><img
+                                src="data:image/jpeg;base64,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"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                            <p>Clarks
+                            <br>Rs.3300<br/>
+                            </p>
+                            </div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf5VwzQHVDKaAZdptYRNnuSZRPN_zeXeeuGw&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Metro
+                                <br>Rs.3500<br/>
+                                </p>
+                            </div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWIRJHCOWVJjK0f2jamVUsBvdTa_uIJfk1og&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Catwalk
+                                <br>Rs.5300<br/>
+                                </p></div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqTbbRCUJahZeTJicGmLvleyBRJ4JCk_v1YQ&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Khadims
+                                <br>Rs.3100<br/>
+                                </p></div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpXHzy0-qCmy-ntHfCCDK6KYdlWZ-9LmaUJg&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Bata
+                                <br>Rs.6200<br/>
+                                </p></div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5EmJxX-rO6O7L37R8W1Tb13u7kkofv4k0Yw&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Mochi
+                                <br>Rs.1500<br/>
+                                </p></div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrk7iZNugCrAX8G_4p9ToonXMmKnMi-VHQPQ&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Clarks
+                                <br>Rs.2200<br/>
+                                </p></div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Y_QdlMikMtJz44hLHp5cJo-ggwK3lD7phg&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Mango
+                                <br>Rs.6100<br/>
+                                </p></div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKlccXYxXJ4141Ft906AIWpSAmcsgMKIR7UQ&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Mochi
+                                <br>Rs.1800<br/>
+                                </p></div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSY_LxC-oR4F9YQUUR2UHcOC3rCMmsX0X3QQ&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Khadims
+                                <br>Rs.3100<br/>
+                                </p></div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTd2_nwhPoLQRKAz3iMKYjG-9M7KSt2ego-w&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Catwalk
+                                <br>Rs.7200<br/>
+                                </p></div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH7oPN6WS0a65yXPa34A8rwLtLGZhuc4eORA&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Metro
+                                <br>Rs.2300<br/>
+                                </p></div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lQq_MSOrjKPoGybKnce323bZykcyx1zVhQ&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Mango
+                                <br>Rs.3500<br/>
+                                </p></div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCkVUFCkdkV9JIEY-s1NLWm520KTLTm6RX7A&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Bata
+                                <br>Rs.4200<br/>
+                                </p></div>
+                            <div><a href="womencart.html"><img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnc5G4ekghlnSSCAaieKv5gmRUVIThP7hGXA&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Metro
+                                <br>Rs.2100<br/>
+                                </p></div>
+                            <div><a href="womencart.html"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH5ZLqHH99XWiuLAel_8EXfodNE5AX03fKmQ&usqp=CAU"
+                                alt="name
+                                "
+                                class="item-img"
+                              /></a>
+                              <p>Khadims
+                                <br>Rs.2500<br/>
+                                </p></div>
+                        </div>
+
+                    </div>
+                </aside>
+          </section>
+    </main>
+    <footer class="footer">  
+      <div id="container">
+  
+       <div class="greenpart">
+              <!-- <p style="background-image: url('https://www.uboric.com/wp-content/uploads/2020/12/Testimonial-5.jpg');" > -->
+                  <div id="head"><h2>What Our Customer Says</h2></div>
+                       
+               <div class="row1 slider">  
+  
+                  <div class="col-md-20">
+                      <p>Good range of shooes and great customer service👌🏻
+                          <p> sagar rupapra</p>
+                          <h6>☆☆☆☆- cutomer</h6>
+                      </p>
+  
+                  </div>
+                  <div class="col-md-20">
+                      <p> Best Range 👍🏻  </p>
+                          
+                          <p>vidya</p>
+                      <h6> ☆☆☆☆☆-cutomer</h6>
+  
+                      
+                </div>
+                  <div class="col-md-20">
+                      <p>Best app for all the footwear needs.
+                          All products are genuine and the 
+                          Services are 100% guaranteed.
+                      
+                      <p>harshil patel</p>
+                      <h6> ☆☆☆☆☆- cutomer</h6>
+                  </p>
+                  </div>
+                  <div class="col-md-20">
+                      <p>Amazing veriaty of shoes in all brand.... Best showroom in Rajkot.
+                      <p>Malin kancha</p>
+                      <h6> ☆☆☆☆☆- cutomer</h6>
+                  </p>
+                
+                  </div>
+                  <div class="col-md-20">
+                      <p> Best Quality products.
+                          <p>parth Gajjar</p>
+                          <h6>☆☆☆☆☆- cutomer</h6>
+                      </p>
+                      
+                  </div>
+                  <div class="col-md-20">
+                      <p>
+                          Premium Quality Footwear Products.👌🏻
+                          Highly Recommend Uboric for your all kind of Footwear Needs 👍🏻 
+                      <p> Dhaval Patel </p>
+                      <h6>☆☆☆☆☆- cutomer</h6>
+                      </p>
+                  </div>
+                  <div class="col-md-20">
+                      <p>Best Quality👍🏻 👍🏻 
+                          <p>Ashish vaghasiya </p>
+                          <h6>☆☆☆☆☆- cutomer</h6>
+                      </p>
+                  </div>
+                  <div class="col-md-20">
+                      <p>
+                          Best collection👍🏻 
+                          <p>Yagnik Sagpariya</p>
+                          <h6>☆☆☆☆☆- cutomer</h6>
+                      </p>
+                  </div>
+  
+              </div>
+               <div id="btn">
+                  <button>Add Your Review</button>
+              </div>
+       </div>
+      <div id="blackpart">
+          <div id="play">
+            <img src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png" height="50px" width="150px" >
+           </div>
+  
+           <div id="seven">
+  
+             <h5><a href=""></a>About Us</h5>
+             <h5><a href=""></a>Contact</h5>
+             <h5><a href=""></a>Shipping & Returns</h5>
+             <h5><a href=""></a>My Account</h5>
+             <h5><a href=""></a>Privacy Policy</h5>
+             <h5><a href=""></a>Become A Seller</h5>
+             <h5><a href=""></a>Terms & Conditions</h5> 
+           </div>
+  
+           <div id="bs">
+             <p >© 2019 – 2021 UBORIC. ALL RIGHTS RESERVED.</p>
+           </div>
+           <div class="social-menu">
+               <ul>
+                   <li>
+                       <a href="#" target="blank" title="rss"><i class="fa fa-facebook"></i></a>
+                   </li>
+                   <li>
+                      <a href="#" target="blank" title="rss"><i class="fa fa-instagram"></i></a>
+                  </li>
+               </ul>
+           </div>
+      </div>
+  
+   </div>
+      
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- for slid part  responsive display form slick slider -->
+
+<script type="text/javascript">
+    $('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+				
+</script> 
+</body>

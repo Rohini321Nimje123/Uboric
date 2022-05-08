@@ -26,12 +26,20 @@
     .forlog{
         width:40%;
         
-        background-color: rgb(255, 253, 253);
+        background-color: white;
         
         }
+    .forlog>div>h2
+    {
+        color : black;
+    }
 
         .forregistor{
             width: 40%;
+        }
+        .forregistor>div>h2
+        {
+            color : black;
         }
 
         .eml{

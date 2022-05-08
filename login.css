@@ -89,7 +89,8 @@
     border-radius: 4px !important;
     padding-left: 10px;
     cursor: pointer;
-
+    color:white;
+    font-size: 12px;  
    }
    
    img{

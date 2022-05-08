@@ -9,32 +9,7 @@
     <link rel="stylesheet" href="header.css">
 </head>
 <body>
-    <header class = "header">
-        <div class = "header-content">
-            <div class ="searchbar">
-                <input type = "text" placeholder = "Search here..."/>
-            </div>
-            <div class = "uboric-icon"><a href = "https://www.uboric.com/"><img src ="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt = "mainlogo"/></a></div>
-            <div class = "signuppage"><a href = "signup.html"><img src = "https://cdn-icons-png.flaticon.com/128/709/709722.png" alt = "icon"/></a></div>
-            <div class = add-to-cart><a><img src = "https://cdn-icons.flaticon.com/png/128/3405/premium/3405668.png?token=exp=1651732476~hmac=55d703dcbb8c81b511919e5b79cde96e" alt = "icon"/></a></div>
-        </div>
-        <div class = "mainbar">
-         <h3><a id = "home"href="index.html">Home</a></h3>
-         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Categories</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="mens.html">Men</a>
-              <a href="women.html">Women</a>
-              <a href="Kitch.html">Kitchen</a>
-              <a href="A-men.html">Men shoes</a>
-              <a href="A-women.html">women Shoes</a>
-            </div>
-          </div>
-         <h3  id = "log"><a href = "login.html">Customer/Guest login</a></h3>
-         <h3 id = "order"><a href="merchant.html">Merchant/Bulk order</a></h3>
-         <h3 id = "seller"><a href = "seller.html">Become A Seller</a></h3>
-        </div>
-    </header>
+
     <div class="Sign-up">
         
         <h1>Sign up</h1>
@@ -42,13 +17,12 @@
         <p><B>CREATE AN ACCOUNT</B></p>
       <form id="formm">
         <p>Username or email<i style="color:orange">*</i></p>
-        <input id="email" type="text" placeholder="Username or email">
-        <p>Password<i style="color:orange">*</i></p>
-        <input id="password" type="password"  placeholder="Password">
+
         <p>LOST YOUR PASSWORD?</p>
        
         
         <input id="submit" type="submit"  value="Signup"/> 
+
     
         
     </form>
@@ -56,19 +30,7 @@
 </body>
 </html>
 <script>
-var form = document.querySelector("#formm")
-form.addEventListener("submit",function(event){
-    event.preventDefault();
-    var data = {
-        email : form.email.value,
-        password : form.password.value,
-    }
-    localStorage.setItem("userdata",JSON.stringify(data))
-    window.location.href = "login.html"
-})
-    function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
@@ -85,3 +47,47 @@ window.onclick = function(event) {
 }
     
 </script>
+=======
+
+    document.querySelector("#formm").addEventListener("submit",addData);
+
+    var userDatarr=JSON.parse(localStorage.getItem("userDatabase")) || [];
+
+    function addData(){
+        var yourname=document.querySelector("#name1").value;
+        var yourpas=document.querySelector("#pas1").value;
+         
+
+        var userCard={
+            tmhraname:yourname,
+            tmhrapassword:yourpas
+        };
+
+        userDatarr.push(userCard);
+
+        localStorage.setItem("userDatabase",JSON.stringify(userDatarr));
+
+        
+
+          if(formm.pas1.value.length >=6 && formm.name1.value.length>=6)
+             {
+            
+                alert("registor")
+                // window.location="login.html"
+            
+             }
+             
+            
+            else if(formm.pas1.value == "" && formm.name1.value==""){
+                alert("Do not keep it Blank");
+            }
+            else
+            {
+                alert ("length is not enough");
+            }
+                
+             }
+    
+    
+</script>
+

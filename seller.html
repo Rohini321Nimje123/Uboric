@@ -32,13 +32,13 @@
             <div id="myDropdown" class="dropdown-content">
               <a href="mens.html">Men</a>
               <a href="women.html">Women</a>
-              <a href="Kitchen.html">Kitchen</a>
+              <a href="Kitch.html">Kitchen</a>
               <a href="A-men.html">Men shoes</a>
               <a href="A-women.html">women Shoes</a>
             </div>
           </div>
          <h3  id = "log"><a href = "login.html">Customer/Guest login</a></h3>
-         <h3 id = "order">Merchant/Bulk order</h3>
+         <h3 id = "order"><a href="merchant.html">Merchant/Bulk order</a></h3>
          <h3 id = "seller"><a href = "seller.html">Become A Seller</a></h3>
         </div>
     </header>
@@ -322,7 +322,23 @@
         // instead of a settings object
       ]
     });
-                    
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}     
     </script> 
 </body>
 </html>

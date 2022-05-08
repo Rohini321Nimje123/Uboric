@@ -80,13 +80,18 @@
     color : white;
     padding : 15px 15px 15px 15px;
 }
-#order:hover,#order:focus
+#order>a:hover,#order>a:focus
 {
     background-color: black;
     color : white;
     padding : 15px 15px 15px 15px;
 }
 #seller>a
+{
+    text-decoration: none;
+    color : black;
+}
+#order>a
 {
     text-decoration: none;
     color : black;

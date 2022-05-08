@@ -126,13 +126,13 @@
         <div id="myDropdown" class="dropdown-content">
           <a href="mens.html">Men</a>
           <a href="women.html">Women</a>
-          <a href="Kitchen.html">Kitchen</a>
+          <a href="Kitch.html">Kitchen</a>
           <a href="A-men.html">Men shoes</a>
           <a href="A-women.html">women Shoes</a>
         </div>
       </div>
      <h3  id = "log"><a href = "login.html">Customer/Guest login</a></h3>
-     <h3 id = "order">Merchant/Bulk order</h3>
+     <h3 id = "order"><a href="merchant.html">Merchant/Bulk order</a></h3>
      <h3 id = "seller"><a href = "seller.html">Become A Seller</a></h3>
     </div>
 </header>
@@ -241,69 +241,69 @@
                      <!-- Products Container -->
                     <div class="container">
                         <div id="display">
-                            <div><img
+                            <div><a href="A-men.html"><img
                                 src="https://www.uboric.com/wp-content/uploads/2019/12/fe2354c1ff2223538915e6c80416533b_result-400x400.jpg"
                                 alt="name
                                 "
                                 class="item-img"
-                              />
+                              /></a>
                             <h2>Casual Sandals (200)</h2>
                             </div>
-                            <div><img
+                            <div><a href="A-men.html"><img
                                 src="https://www.uboric.com/wp-content/uploads/2019/12/fe4618c043ad5d860331149ed80888ef_result-400x400.jpg"
                                 alt="name
                                 "
                                 class="item-img"
-                              />
+                              /></a>
                             <h2>Slippers (180)</h2></div>
-                            <div><img
+                            <div><a href="A-men.html"><img
                                 src="https://www.uboric.com/wp-content/uploads/2019/12/5ca7752dd0d34782f3b46e5c94cc0f3b_result-400x400.jpg"
                                 alt="name
                                 "
                                 class="item-img"
-                              />
+                              /></a>
                             <h2>Sneakers (300)</h2></div>
-                            <div><img
+                            <div><a href="A-men.html"><img
                                 src="https://www.uboric.com/wp-content/uploads/2019/12/4b51e0cf02d5f2529ccc61d3201fbe58_result-400x400.jpg"
                                 alt="name
                                 "
                                 class="item-img"
-                              />
+                              /></a>
                             <h2>Loafers (250)</h2></div>
-                            <div><img
+                            <div><a href="A-men.html"><img
                                 src="https://www.uboric.com/wp-content/uploads/2019/12/d4c25e9efd546803ca71d1a82fadc65b_result-400x400.jpg"
                                 alt="name
                                 "
                                 class="item-img"
-                              />
+                              /></a>
                             <h2>Flip Flops (350)</h2></div>
-                            <div><img
+                            <div><a href="A-men.html"><img
                                 src="https://www.uboric.com/wp-content/uploads/2019/12/b4bf30bb1519e85a2e9e55ca332bb4ab_result-400x400.jpg"
                                 alt="name
                                 "
                                 class="item-img"
-                              />
+                              /></a>
                             <h2>Mojdi (200)</h2></div>
-                            <div><img
+                            <div><a href="A-men.html"><img
                                 src="https://www.uboric.com/wp-content/uploads/2019/12/bef2b18d267aea052d02f7d537f8ad26_result-400x400.jpg"
                                 alt="name
                                 "
                                 class="item-img"
-                              />
+                              /></a>
                             <h2>Sports Shoes (200)</h2></div>
-                            <div><img
+                            <div><a href="A-men.html"><img
                                 src="https://www.uboric.com/wp-content/uploads/2019/12/1de99999291951b1f3799b8a82464aa3_result-400x400.jpg"
                                 alt="name
                                 "
                                 class="item-img"
-                              />
+                              /></a>
                             <h2>Casual/Party Shoes (140)</h2></div>
-                            <div><img
+                            <div><a href="A-men.html"><img
                                 src="https://www.uboric.com/wp-content/uploads/2019/12/7e7fee993140e1f6a3fc82179141f430_result-400x400.jpg"
                                 alt="name
                                 "
                                 class="item-img"
-                              />
+                              /></a>
                             <h2>Sports Sandals (178)</h2></div>
                         </div>
 
@@ -460,6 +460,25 @@
     // instead of a settings object
   ]
 });
+
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 				
 </script> 
 </body>

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+   }
+#heading{
+    color: #04090c ;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#container{
+    width: 100%;
+    height: 80%;
+    
+    font-family:Arial, Helvetica, sans-serif; 
+    
+    }
+
+    .box{ 
+        height: 70%;
+       
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+    .forlog{
+        width:40%;
+        
+        background-color: white;
+        
+        }
+    .forlog>div>h2
+    {
+        color : black;
+    }
+
+        .forregistor{
+            width: 40%;
+        }
+        .forregistor>div>h2
+        {
+            color : black;
+        }
+
+        .eml{
+            width: 490px;
+            height: 30px;
+            border-radius: 4px;
+            border:1px solid rgb(189, 186, 186);
+           }
+
+           #psw{
+            width: 490px;
+            height: 30px;
+            border-radius: 4px;
+            border:1px solid rgb(189, 186, 186);
+           }
+
+           .submit{
+            display: flex;
+           }
+
+           .btn{
+            padding: 12px  12px 12px 12px;
+            background-color: #ffce61;
+        }
+        .btn:hover{
+            background-color: white;
+            cursor: pointer;
+        }
+        #bton{
+         border-color: rgb(79, 113, 232);
+         border-bottom-width: thin;
+         margin-left: 4px !important;
+         background: linear-gradient(90deg, rgb(255, 255, 255) 40px, rgb(79, 113, 232) 5%) !important; 
+         width: 200px !important;
+         padding-top: -7px !important;
+         padding-bottom: 6px !important;
+         margin-bottom: -1px !important;
+         border-radius: 4px !important;
+         cursor: pointer;
+         color: white;
+         font-size: 16px;
+        }
+
+        img{
+            padding-right: 31px;
+            width: 30px;
+        }
+
+        .usr{
+            width: 490px;
+            height: 30px;
+            border-radius: 4px;
+            border:1px solid rgb(189, 186, 186);
+
+        }
+
+        .pwd{
+            width: 490px;
+            height: 30px;
+            border-radius: 4px;
+            border:1px solid rgb(189, 186, 186);
+
+        }
+
+        .mob{
+            width: 490px;
+            height: 30px;
+            border-radius: 4px;
+            border:1px solid rgb(189, 186, 186);
+
+        }
+
+        .pan{
+            width: 490px;
+            height: 30px;
+            border-radius: 4px;
+            border:1px solid rgb(189, 186, 186);
+
+        }
+
+        .gst{
+            width: 490px;
+            height: 30px;
+            border-radius: 4px;
+            border:1px solid rgb(189, 186, 186);
+
+        }
+
+
+
+
+

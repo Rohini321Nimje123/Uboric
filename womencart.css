@@ -1,0 +1,164 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/* TOP Section */
+#head-section{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid teal;
+}
+.head-section-heading{
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(2, 94, 94);  
+}
+.head-links{
+  text-align: center;
+}
+
+
+
+
+
+/* Bottom Section */
+.cart-section{
+  height: 600px;
+  width: 100%;
+  /*border: 1px solid red;*/
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
+}
+
+/* LEFT_SECTION */
+#box1{
+  height: 600px;
+  width: 48%;
+ /* border: 1px solid green;*/
+ 
+}
+
+
+/* RIGHT_SECTION */
+#box2{
+  height: 600px;
+  width: 52%;
+  padding: 10px;
+/*border: 1px solid green;*/
+}
+.product-info{
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.old-price{
+    text-decoration: line-through;
+}
+
+.guarantee-logo{
+    width: 25%;
+    margin: 40px auto;
+}
+
+.facility-box{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+}
+.f-box{
+    /* border: 1px solid black; */
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.f-logo{
+    color:#1e516c;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.stock-data{
+    width: 60%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 30px auto;
+    text-align: center;
+}
+.box2-hr{
+    border: 6px solid rgb(207, 207, 207);
+    margin-bottom: 20px;
+}
+
+
+/* BOX2-BOTTOM */
+
+#box2-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+}
+
+
+/* Bottom Left */
+.bottom-left{
+    width: 20%;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.rest-stock{
+    color: green;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.stock-data>p>span{
+    color: blue;
+}
+.quantity{
+    color: green;
+    font-weight: bold;
+}
+
+/* Bottom right */
+
+.bottom-right{
+    width:70%;
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-btn{
+    width: 150px;
+    height: 40px;
+    border: 2px solid rgb(158, 171, 20);
+    background-color: rgb(206, 222, 32);
+    border-radius: 8px;
+    font-size: larger;
+    font-weight: bold;
+    
+}
+
+#box1 > div > img{
+    height: 550px;
+    width: 90%;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.cart-btn:hover
+{
+   color : white;
+   background-color:green;
+   cursor: pointer;
+}

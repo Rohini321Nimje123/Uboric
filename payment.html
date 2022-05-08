@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in</title>
-    <link rel="stylesheet" type="text/css" href="./signup.css">
+    <title>Document</title>
     <link rel="stylesheet" href="header.css">
 </head>
+<style>
+    #container{
+        width: 200px;
+        margin: auto;
+        margin-top: 100px;
+       
+     
+    }
+    #payment>input
+    {
+       height : 25px;
+       width : 200px;
+
+    }
+    h1{
+        text-align: center;
+    }
+    #submit
+    {
+        color: black;
+        background-color: orangered;
+        margin-top: 20px;
+        border-radius: 5px;
+        border: 0px;
+    }
+</style>
 <body>
     <header class = "header">
         <div class = "header-content">
@@ -35,37 +60,41 @@
          <h3 id = "seller"><a href = "seller.html">Become A Seller</a></h3>
         </div>
     </header>
-    <div class="Sign-up">
-        
-        <h1>Sign up</h1>
-
-        <p><B>CREATE AN ACCOUNT</B></p>
-      <form id="formm">
-        <p>Username or email<i style="color:orange">*</i></p>
-        <input id="email" type="text" placeholder="Username or email">
-        <p>Password<i style="color:orange">*</i></p>
-        <input id="password" type="password"  placeholder="Password">
-        <p>LOST YOUR PASSWORD?</p>
-       
-        
-        <input id="submit" type="submit"  value="Signup"/> 
+    <h1>PAYMENT GATEWAY</h1>
+    <h1 id="heading">Enter Data Here To Sign Up</h1>
+    <div id="container">
+        <form id="payment">
+            <input id="paymentnumber" type="number" placeholder="cardnumber">
+            <input id="paymentcvv" type="number" placeholder="CVV">
+            <input id="paymentdate" type="number" placeholder="Expiery Date">
+            <input id="paymentname" type="text" placeholder="Name">
+            <input id = "submit" type="submit" placeholder="Submit">
     
-        
+
+  
+   
+
     </form>
-    </div>
+</div>
 </body>
 </html>
 <script>
-var form = document.querySelector("#formm")
-form.addEventListener("submit",function(event){
-    event.preventDefault();
-    var data = {
-        email : form.email.value,
-        password : form.password.value,
+    document.querySelector("#payment").addEventListener("submit",myfunction)
+
+    function myfunction(){
+event.preventDefault();
+       if(payment.paymentnumber.value=="1234" && payment.paymentcvv.value=="1234" &&
+       payment.paymentdate.value==28042022){
+        window.location.href="otp.html"
+       }
+           else{
+               alert("order placed");
+               window.location.href = "index.html";
+           } 
+        
+       
+    
     }
-    localStorage.setItem("userdata",JSON.stringify(data))
-    window.location.href = "login.html"
-})
     function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -83,5 +112,4 @@ window.onclick = function(event) {
     }
   }
 }
-    
 </script>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/60217b89b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/pages/product/product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./page.css">
+    <link rel="stylesheet" href="womencart.css">
+    <link rel="stylesheet" href="header.css">
+  </head>
+ 
+  <body>
+    <header class = "header">
+        <div class = "header-content">
+            <div class ="searchbar">
+                <input type = "text" placeholder = "Search here..."/>
+            </div>
+            <div class = "uboric-icon"><a href = "https://www.uboric.com/"><img src ="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt = "mainlogo"/></a></div>
+            <div class = "signuppage"><a href = "signup.html"><img src = "https://cdn-icons-png.flaticon.com/128/709/709722.png" alt = "icon"/></a></div>
+            <div class = add-to-cart><a><img src = "https://cdn-icons.flaticon.com/png/128/3405/premium/3405668.png?token=exp=1651732476~hmac=55d703dcbb8c81b511919e5b79cde96e" alt = "icon"/></a></div>
+        </div>
+        <div class = "mainbar">
+         <h3><a id = "home"href="index.html">Home</a></h3>
+         <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Categories</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="mens.html">Men</a>
+              <a href="women.html">Women</a>
+              <a href="Kitch.html">Kitchen</a>
+              <a href="A-men.html">Men shoes</a>
+              <a href="A-women.html">women Shoes</a>
+            </div>
+          </div>
+         <h3  id = "log"><a href = "login.html">Customer/Guest login</a></h3>
+         <h3 id = "order"><a href="merchant.html">Merchant/Bulk order</a></h3>
+         <h3 id = "seller"><a href = "seller.html">Become A Seller</a></h3>
+        </div>
+    </header>
+    <!-- HEADER-PART -->
+    <div id="head-section">
+        <main>
+            <h1 class="head-section-heading">WOMEN'S FOOTWARE</h1>
+            <section class="head-links">
+                <a href="./../../index.html">Home</a> > <a href="#">Products</a> >
+                <a href="#">WOMEN'S FOOTWARE</a> 
+                
+              </section>
+     </div>
+
+
+     <!-- CART-PART -->
+
+
+     <!-- LEFT-PART -->
+     <div class="cart-section">
+         <div id="box1">
+             <div>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWIRJHCOWVJjK0f2jamVUsBvdTa_uIJfk1og&usqp=CAU"/>
+             </div>
+             
+         </div>
+
+         <!-- RIGHT-PART -->
+         <div id="box2">
+            <div>
+                <div class="product-info">
+                    
+                    <p class="price">
+                      <span class="line-through"></span>
+                      <span class="old-price">₹7900.00</span>
+                      <span class="new-price">₹5300.00</span>
+                      <span>(Inclusive of all taxes)</span>
+                    </p>
+                  </div>
+        
+                  <div class="guarantee-logo">
+                    <img
+                      src="https://www.uboric.com/wp-content/uploads/2020/12/guarantee.svg"
+                      alt="100% Guarantee"
+                    />
+                  </div>
+        
+                  <article class="facility-box">
+                    <div class="f-box">
+                      <p class="f-logo">
+                        <i class="fas fa-money-bill-alt"></i>
+                      </p>
+                      <p class="f-text">7days Return</p>
+                    </div>
+        
+                    <div class="f-box">
+                      <p class="f-logo">
+                        <i class="fas fa-headphones"></i>
+                      </p>
+                      <p class="f-text">24/7 Online Support</p>
+                    </div>
+        
+                    <div class="f-box">
+                      <p class="f-logo">
+                        <i class="fa fa-shopping-bag"></i>
+                      </p>
+                      <p class="f-text">Fast Delivery in<br />India</p>
+                    </div>
+        
+                    <div class="f-box">
+                      <p class="f-logo">
+                        <i class="fa fa-credit-card"></i>
+                      </p>
+                      <p class="f-text">Secure Payment</p>
+                    </div>
+                  </article>
+
+                  <section id="Stock-detail">
+                    <div class="stock-data">
+                      <p>HURRY! ONLY <span>100</span> LEFT STOCK</p>
+                    </div>
+                  </section>
+
+                  <hr class="box2-hr">
+
+                  <!-- Box-bottom -->
+
+                  <div id="box2-bottom">
+                    <!-- BOTTOM-LEFT -->
+                  <div class="bottom-left">
+
+                    <div class="rest-stock">100 in Stock</div>
+                  <div class="quantity">1</div>
+                  </div>
+
+
+                  <!-- BOTTOM-RIGHT -->
+                  <div class="bottom-right"><a href="payment.html">
+                      <button class="cart-btn">Add To cart</button>
+                    </a>
+                  </div>
+                  </div>
+        
+            </div>
+            
+        </div>
+         
+
+     </div>
+    
+      
+</body>
+</html>
+<script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>

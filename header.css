@@ -54,13 +54,13 @@
 }
 .mainbar
 {
-    width : 60%;
+    width : 65%;
     height : 40px;
     display : flex;
     justify-content: space-between;
     margin : auto;
     align-items: center;
-    margin-bottom : 15px;
+    margin-bottom : 20px;
 }
 #home:hover,#home:focus
 {

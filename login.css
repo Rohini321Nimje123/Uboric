@@ -78,24 +78,20 @@
        cursor: pointer;
    }
    #bton{
-    border-color: rgb(79, 113, 232);
+    border-color: white;
     border-bottom-width: thin;
-    margin-left: 4px !important;
-    background: blue;
-    width: 200px !important;
-    padding-top: 7px !important;
-    padding-bottom: 6px !important;
-    margin-bottom: -1px !important;
-    border-radius: 4px !important;
-    padding-left: 10px;
+    background: rgb(79, 79, 203);
+    width : 250px;
+    height : 80px;
     cursor: pointer;
     color:white;
-    font-size: 12px;  
+    font-size: 13px;  
    }
    
    img{
        padding-right: 31px;
        width: 30px;
+       
    }
    p{
        font-size: 18px;

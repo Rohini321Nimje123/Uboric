@@ -1,0 +1,4 @@
+Nikhil Bhardwaj : Worked on the layout and functionality of the homepage and helped other teammembers in adding functionality to their page.
+Rohini Nimje : Worked on the layout and functionality of the product page and adding the data to cart for checkout.
+Akriti Jain : Worked on the layout and functionality of login,seller,merchant page.
+Dolly Vishwakarma : Worked on the layout and functionality of signup,footer,payment page.
